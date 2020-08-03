@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import * as React from 'react';
 import { CharitiesAPI, ICharity } from "../UTILS/types";
 import { useParams } from 'react-router-dom';
@@ -12,7 +11,7 @@ class Filter extends React.Component<IFilterProps, IFilterState> {
 
 	async componentDidMount() {
 		try {
-			let r = await fetch('/api/charities/get');
+			let r = await fetch('/api/charities');
 			let charities = await r.json();
 			this.setState({ charities });
 		} catch (error) {
@@ -45,7 +44,7 @@ export interface IFilterState {
 }
 
 export default Filter;
-=======
+
 // import * as React from 'react';
 // import type { CharitiesAPI, ICharity } from "../UTILS/types";
 // import { useParams } from 'react-router-dom'
@@ -90,4 +89,4 @@ export default Filter;
 // }
 
 // export default Filter;
->>>>>>> 3ce01ba2e2b4a10491e9b7019dfc6b8db7d357bd
+
