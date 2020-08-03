@@ -16,14 +16,14 @@ export const post = async () => {
     )
       .then((res) => JSON.parse(res))
       .then((res) =>
-        res.map((x: { name: ""; category: { categoryName: ""; categoryID: ""; }; cause: { causeName: ""; causeID: ""; }; mailingAddress: { city: ""; streetAddress1: ""; postalCode: ""; }; websiteURL: ""; mission: ""; tagLine: "";  currentRating: "" }) => {
+        res.map((x: { charityName: ""; category: { categoryName: ""; categoryID: ""; }; cause: { causeName: ""; causeID: ""; }; mailingAddress: { city: ""; streetAddress1: ""; postalCode: ""; }; websiteURL: ""; mission: ""; tagLine: ""; ein:"";  rating: "" }) => {
           Query<Array<TCharitiesAPI>>(
 
-            `INSERT INTO charities (name, category_name, category_id, cause_name, cause_id, city, streetAddress1, 
-               postal_code, websiteURL, mission, tagline, rating) 
+            `INSERT INTO charities (charity_name, category_name, category_id, cause_name, cause_id, city, streetAddress1, 
+               postal_code, websiteURL, mission, tagline, EIN, rating) 
                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
             [
-              x.name,
+              x.charityName,
               x.category.categoryName,
               x.category.categoryID,
               x.cause.causeName,
@@ -34,7 +34,8 @@ export const post = async () => {
               x.websiteURL,
               x.mission,
               x.tagLine,
-              x.currentRating
+              x.ein,
+              x.rating
             ]
         )})
       )
