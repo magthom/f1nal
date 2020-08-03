@@ -1,5 +1,5 @@
 export interface CharitiesAPI {
-    charityName: String,
+    name: String,
     categoryName: Number,
     categoryID: Number,
     causeName: String,
@@ -15,7 +15,7 @@ export interface CharitiesAPI {
 
 export interface ICharity {
     id: number,
-    charity_name: string,
+    name: string,
     category_name: number,
     category_id: number,
     cause_name: string,
