@@ -1,13 +1,13 @@
 import { Connection } from "../index";
 import { Query } from "../index";
 import * as rp from "request-promise";
-import { CharitiesAPI, CharitiesfromDB } from "../models/types";
+import { TCharitiesAPI, TCharitiesfromDB } from "../models/types";
 
 export const all = () => 
- Query<Array<CharitiesfromDB>>(`SELECT * from charities`);
+ Query<Array<TCharitiesfromDB>>(`SELECT * from charities`);
 
  export const one = (id: Number) =>
- Query<Array<CharitiesfromDB>>(`SELECT * from charities WHERE charities.id = ?`, [id]);
+ Query<Array<TCharitiesfromDB>>(`SELECT * from charities WHERE charities.id = ?`, [id]);
 
 export const post = async () => {
   try {
@@ -17,10 +17,10 @@ export const post = async () => {
       .then((res) => JSON.parse(res))
       .then((res) =>
         res.map((x: { name: ""; category: { categoryName: ""; categoryID: ""; }; cause: { causeName: ""; causeID: ""; }; mailingAddress: { city: ""; streetAddress1: ""; postalCode: ""; }; websiteURL: ""; mission: ""; tagLine: "";  currentRating: "" }) => {
-          Query<Array<CharitiesAPI>>(
+          Query<Array<TCharitiesAPI>>(
 
             `INSERT INTO charities (name, category_name, category_id, cause_name, cause_id, city, streetAddress1, 
-               postal_code, websiteURL, mission, tagline, EIN, rating) 
+               postal_code, websiteURL, mission, tagline, rating) 
                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
             [
               x.name,
@@ -34,10 +34,9 @@ export const post = async () => {
               x.websiteURL,
               x.mission,
               x.tagLine,
-              x.organization.ein,
-              x.currentRating.rating,
+              x.currentRating
             ]
-          })
+        )})
       )
            
   } catch (err) {
