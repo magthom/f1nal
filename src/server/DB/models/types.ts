@@ -1,5 +1,5 @@
-export interface CharitiesAPI {
-    charityName: String,
+export interface TCharitiesAPI {
+    name: String,
     categoryName: Number,
     categoryID: Number,
     causeName: String,
@@ -13,9 +13,9 @@ export interface CharitiesAPI {
     rating: Number
 }
 
-export interface CharitiesfromDB {
+export interface TCharitiesfromDB {
     id: Number,
-    charity_name: String,
+    name: String,
     category_name: Number,
     category_id: Number,
     cause_name: String,
