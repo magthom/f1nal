@@ -1,9 +1,16 @@
+import * as dotenv from 'dotenv';
+
+const envFound =dotenv.config();
+
+if(!envFound) {
+    throw new Error('.env not found');
+}
+
 export default {
     mysql: {
-    host:'localhost',
-    port: 3306,
-    user: 'root',
-    database: 'charitydb',
-    password: 'maggie2020'
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_SCHEMA
 }
 }
