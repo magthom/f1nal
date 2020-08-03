@@ -1,7 +1,13 @@
-import * as React from "react";
-import "../scss/style.scss";
+import * as React from 'react';
+import { render } from 'react-dom';
 
-class Home extends React.Component<IHomeProps> {
+// const Home : React.FC<HomeProps> = (props) => {
+// //     return (
+// //         <h1 className="text-center display-1 mt-5">Home View</h1>
+// //     )
+// //   }
+
+class Home extends React.Component<HomeProps> {
   constructor(props) {
     super(props);
   }
@@ -95,12 +101,8 @@ class Home extends React.Component<IHomeProps> {
   }
 }
 
-export interface IHomeProps {
+export interface HomeProps {
   styles: string;
 }
 
-<<<<<<< HEAD
 export default Home;
-=======
-export default Home;
->>>>>>> 3ce01ba2e2b4a10491e9b7019dfc6b8db7d357bd
