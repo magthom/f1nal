@@ -23,7 +23,7 @@ export const post = async () => {
                postal_code, websiteURL, mission, tagline, EIN, rating) 
                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
             [
-              x.charityName,
+              x.name,
               x.category.categoryName,
               x.category.categoryID,
               x.cause.causeName,
