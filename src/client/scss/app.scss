@@ -1,4 +1,6 @@
 $theme-colors: (
     'primary': #14534d 
 );
+
+@import './home.scss';
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
