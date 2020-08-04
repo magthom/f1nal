@@ -1,7 +1,4 @@
 import * as React from 'react';
-import { useState, useEffect } from 'react';
-import { ICharity } from '../UTILS/types';
-
 import { Link } from 'react-router-dom';
 
 class Home extends React.Component<HomeProps> {
