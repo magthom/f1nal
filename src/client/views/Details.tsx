@@ -1,21 +1,22 @@
 import * as React from "react";
-import { ICharity } from '../UTILS/types';
-import { match } from 'react-router-dom'
+import { ICharity } from "../UTILS/types";
+import { match } from "react-router";
 
 class Details extends React.Component<DetailsProps, { org: any }> {
   id: any;
-  constructor(props, { match }) {
-    super(props, { match });
-    this.id = props.match.params;
+  constructor(props) {
+    super(props);
     this.state = { org: {} };
   }
-
   async componentDidMount() {
-    let res = await fetch(`/api/charities/${this.id}`);
-    let org = await res.json();
-    this.setState({ org: org });
+    try {
+      let r = await fetch(`/api/charities/${this.props.match.params.id}`);
+      let org = await r.json();
+      this.setState({ org: org });
+    } catch (error) {
+      console.log(error);
+    }
   }
-
   render() {
     return (
       <main className="container">
@@ -29,9 +30,7 @@ class Details extends React.Component<DetailsProps, { org: any }> {
     );
   }
 }
-
 interface DetailsProps {
-  org?: ICharity
+  org?: ICharity;
 }
-
 export default Details;
