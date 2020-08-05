@@ -7,14 +7,17 @@ class Details extends React.Component<DetailsProps, { org: any }> {
   id: any;
   constructor(props, { match }) {
     super(props, { match });
-    this.id = props.match.params;
     this.state = { org: {} };
   }
 
   async componentDidMount() {
-    let res = await fetch(`/api/charities/${this.id}`);
+    try {
+    let res = await fetch(`/api/charities/${this.props.match.id}`);
     let org = await res.json();
     this.setState({ org: org });
+  } catech (error) {
+    console.log(error);
+  }
   }
 
   render() {

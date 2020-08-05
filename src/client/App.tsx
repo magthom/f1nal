@@ -3,39 +3,30 @@ import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import Home from './views/Home';
 import Details from './views/Details';
 import Charities from './views/Charities';
-import About from './views/About';
-import { Component } from "react";
-import { ICharity, CharitiesAPI } from './UTILS/types';
+import { ICharity, TCharitiesAPI } from "./UTILS/types";
+
 
 const App: React.FC<IAppProps> = () => {
 
     return (
       <BrowserRouter>
         <Switch>
-          <Route exact path="/">
-            <Home />
-            </Route>
-        {/* <Route exact path="/details/:id">
-           <Details />
-           </Route> */}
-            <Route exact path="/charities/">
-            <Charities />
-          </Route> 
-          <Route exact path="/About">
-            <About />
-          </Route>
+
+          <Route exact path="/" component={Home} />
+          <Route exact path="/charities/:id" component={Details} />         
+          <Route exact path="/charities/" component={Charities} />         
+
         </Switch>
     </BrowserRouter>
 
-    )
+    );
     }
 
 
-export interface IAppProps {
- 
-}
+export interface IAppProps {}
 
 export interface IAppState {
-  charities: Array<ICharity>
+  charities: Array<ICharity>;
 }
+
 export default App;

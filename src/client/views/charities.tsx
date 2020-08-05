@@ -4,6 +4,7 @@ import OrgCard from '../components/OrgCard';
 import Navbar from './Navbar';
 import '../scss/charities.scss';
 
+
 class Charities extends React.Component<IcharityProps, IcharityState> {
 	constructor(props: IcharityProps) {
 		super(props);
@@ -69,6 +70,7 @@ class Charities extends React.Component<IcharityProps, IcharityState> {
 						</div>
 					</div>
 				</div>
+
 			</>
 		);
 	}
