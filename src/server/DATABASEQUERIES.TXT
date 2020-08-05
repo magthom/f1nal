@@ -1,0 +1,20 @@
+CREATE TABLE Charities (
+id int not null auto_increment primary key,
+charity_name varchar(1000),
+category_name varchar(1000),
+category_id int,
+cause_name varchar(1000),
+cause_id int,
+city varchar(1000),
+streetAddress1 varchar(1000),
+postal_code int,
+websiteURL varchar(100),
+mission text,
+tagline varchar(1000),
+EIN int,
+rating int,
+_created datetime default current_timestamp);
+
+
+
+SELECT * FROM charitydb.charities;

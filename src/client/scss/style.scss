@@ -1,0 +1,197 @@
+﻿﻿/* Reset */
+// html, body {margin: 0; padding: 0; border: 0; 
+// 				background: transparent; font-size: 10px;
+// 				background-color:#eeeeee }
+
+div, span, article, aside, footer, header, hgroup, nav, section, h1, h2, h3, h4, h5 h6, p, blockquote, a, ol, ul, li, table, tr, th, td, tbody, tfoot, thead {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+img { margin: 0; padding: 0; border: 0;}
+
+table, tr, th, td, tbody, tfoot, thead {
+	margin: 0; padding: 0; border: 0;
+	vertical-align: baseline;
+	background: transparent; 
+}
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+input, select, textarea, form, fieldset {
+	margin: 0; padding: 0; border: 0;
+}
+
+article, aside, dialog, figure, footer, header, hgroup, nav, section {
+	display:block; 
+}
+
+h1, h2, h3, h4, h5, h6, p, li, blockquote, td, th, a, caption, em, strong, strike {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 100%;
+	text-indent: 0;
+	text-decoration: none;
+	text-align: left;
+	color: #000;
+}
+
+ol, ul { list-style: none; }
+
+
+
+/* Headings */ 
+h1, h2, h3, h4, h5, h6 { font-weight: bold; color:#000; }
+h1 {font-size: 24px; }
+h2 {font-size: 20px; }
+h3 {font-size: 16px; }
+h4 {font-size: 14px; }
+h5 {font-size: 14px; }
+h6 {font-size: 14px; }
+
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img { margin: 0;}
+
+/* Text Elements */
+
+p { color:#000; font-size:12px; line-height:150%; }
+p .left { margin: 1.5em 1.5em 1.5em 0; padding: 0;}
+p .right { margin: 1.5em 0 1.5em 1.5em; padding: 0;}
+
+a { }
+a:link { color: #00f; }
+a:visited { color: #00f; }
+a:active { color: #00f; }
+a:focus { color: #00f; }
+a:hover { color: #00f; }
+
+blockquote { color:#000; font-size:12px; }
+
+strong { font-weight: bold; }
+em { font-style: italic;}
+
+/* Images */
+
+/* Lists */ 
+ul { }
+ol { list-style-type:decimal;}
+ul li { color:#000; font-size:12px; }
+ol li { color:#000; font-size:12px; }
+
+dl { }
+dt { }
+dd { }
+
+/* Tables */
+table { width:100%; }
+
+tr {  }
+.odd {background-color: #eee; }
+.even { background-color: #fff; }
+
+th { font-weight: bold;}
+thead, th { background: #ccc; }
+
+tbody {  }
+
+th, td, caption {   }
+caption {   }
+
+tfoot {  }
+.tfooter { background-color:#ccc; text-align:center; font-style:italic; }
+
+caption { background: #efefef; }
+
+/* Containers */
+
+#wrapper { width: 900px; margin:0px auto; background-color:#ffffff }
+
+#top 		{ background-color:black; width:100%; padding: 20px 0; overflow:hidden; display: block; margin: 0px; }
+
+#logo  		{ margin: 0 0 0 10px; float:left; }
+
+#social-media { float:right; margin:0 10px 0 0; }
+#social-media p { color:#ffffff; font-size:18px; margin:4px 10px 4px 0px; display:inline;}
+#social-media img { width:24px; height:24px; }
+#social-media ul li { display:inline; }
+
+#topnav {  background-color:#333333; clear:both; }
+#topnav ul { width:100%; float:left; margin:0px; background-color:#333333;	
+				border-bottom: 3px #cccccc solid;}
+#topnav ul li { display:inline; font-size: 18px;}
+#topnav ul li a {float:left; padding:10px 20px;}
+
+#topnav a:link {color:#ffffff;}
+#topnav a:visited {color:#ffffff;}
+#topnav a:active {color:#ffffff;}
+#topnav a:hover {color:#ffffff; background-color:maroon}
+#topnav a:focus {color:#ffffff;}
+
+#navLeft { float:left; margin: 105px 0px 0px; width: 21.9%; padding:0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-color:#CCCCCC;}
+#navLeft p { width: 975px; margin: auto; font-size: 13px; line-height: 1.6em; color:#FFFFFF; background-color:gray;}
+#navLeft a:link {color:#ffffff;}
+#navLeft a:visited {color:#ffffff;}
+#navLeft a:active {color:#ffffff;}
+#navLeft a:hover {color:#ffffff; background-color:maroon}
+#navLeft a:focus {color:#ffffff;}
+
+video {
+	width: 100%;
+	max-width: 100%;
+}
+
+.auto-class4 {
+	width: 903px
+}
+
+#banner { 
+	height: 1px
+ }
+
+#subbanner {  }
+
+#content-wrapper {  }
+
+#leftnav {   }
+
+#content {  }
+
+
+/* Forms */
+
+form { text-align:left; margin:0px; }
+label, submit, input, textarea {
+	border:0; padding:0; margin:0; background:none; 
+}
+
+label {
+	float: left; width: 150px;
+	text-align:right; display:block;
+}
+
+input, textarea {
+	border:1px #333 solid; margin-left:10px;
+}
+
+input {
+	width: 280px; margin-bottom: 16px;
+}
+
+textarea {
+	width: 280px; height: 150px;
+}
+
+select { }
+
+.submit {
+	width:90px; height: 25px;
+	margin-left: 150px;
+	font-size: 12px;
+}
+
+br { clear: left; }
+
