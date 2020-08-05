@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
+import '../scss/about.scss';
 
 class Home extends React.Component<HomeProps> {
   constructor(props) {
@@ -12,52 +13,42 @@ class Home extends React.Component<HomeProps> {
         <div>
           <title>Document</title>
           <Navbar />
-          <link href="CSS/style1.css" rel="stylesheet" type="text/css" media="screen" />
-          <style type="text/css" dangerouslySetInnerHTML={{ __html: "\n.auto-style2 {\n\tfont-size: large;\n}\n\t.auto-style4 {\n\t\tmargin-right: 0px;\n\t\tmargin-top: 0px;\n\t\tmargin-left: 0px;\n\t}\n\t.auto-style5 {\n\t\tmargin-top: 0;\n\t}\n\t.auto-style6 {\n\t\tmargin-bottom: 64px;\n\t}\n\t" }} />
-          <div className="top">
-            <div className="logo">
-              <img src="./assests/darklogo.jpg" alt="Helping Hands Logo" width={300} className="auto-style5" height={70} />
-            </div>
-            <div className="social-media">
-              <p>Login</p>
-              <p>Register</p>
-              <p>Donate</p>
-            </div>
-            <div className="favIcons" style={{ width: '69px' }}>
-              <div className="fbIcon">
-                <img src="./assests/Icons/124010.png" height={24} width={24} />
-              </div>
-              <div className="twitterIcon">
-                <img src="./assests/twitter.png" height={24} width={24} />
-              </div>
-            </div>
-          </div>
-          <div className="topnav">
-            <ul>
-              <li><a href="index.html" className="auto-style2">Home</a></li>
-              <li><span className="auto-style2">&nbsp;&nbsp;&nbsp; </span>
-              </li><li><a href="charityDirectory.html" className="auto-style2">Charities</a>&nbsp;&nbsp; </li>
-              <li>&nbsp; <a href="about.html" className="auto-style2">About</a></li>
-              <input type="text" placeholder="Search for charities.." />
-            </ul>
-          </div>
-          <div className="banner" style={{ height: '1px' }}>
-            &nbsp;</div>
-          <div className="wrapper">
-            <div className="content">
-              <img src="./assests/City.jpg" alt="City" width={1300} height={400} />
+          
+          
+
+          <div className="aboutWrapper">
+          <div className="aboutBorder">
+            <div className="aboutContent">
+              <img src="./assests/City_chaston.jpg" alt="City" width={1300} height={400} />
               <div className="subbanner">
+              <div className="emailList">
+              <h1>Contact Us</h1>
+                <ul>
+                  <li>
+                    Quinn email
+                  </li>
+                  <li>
+                    Chaston email
+                  </li>
+                  <li>
+                    John email
+                  </li>
+                  <li>
+                    Shashawndra email
+                  </li>
+                  <li>
+                    Maggie email
+                  </li>
+                </ul>
+                </div>
                 <h1 className="aboutHeader">About Us</h1>
-                <p>&nbsp;</p>
-                <p className="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+               
+                <p className="aboutPara">Our app is here to help people connect with charities in their community to help support and better those that need a little assistance in times of need. We want to make it easier for people to find their way to help in the simplest and most convenient way possible. This app will allow people to donate directly and correspond with the charities of their choice. Since there is no one way to help we make it easy for people to find their way to help and give back to their community. </p>
+                
               </div>
             </div>
           </div>
+        </div>
         </div>
       </>
     );
