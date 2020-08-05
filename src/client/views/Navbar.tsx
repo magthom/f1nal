@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Navbar: React.FC<{}> = () => {
     return (
@@ -23,15 +24,15 @@ const Navbar: React.FC<{}> = () => {
             </div>
             <div className="topnav">
                 <ul>
-                    <li><a href="index.html" className="auto-style2">Home</a></li>
-                    <li><span className="auto-style2">&nbsp;&nbsp;&nbsp; </span>
-                    </li><li><a href="charityDirectory.html" className="auto-style2">Charities</a>&nbsp;&nbsp; </li>
-                    <li>&nbsp; <a href="about.html" className="auto-style2">About</a></li>
-                    <input type="text" placeholder="Search for charities.." />
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="Charities">Charities</Link></li>
+                    <li><Link to="/About">About</Link></li>
+                    <input className="search" type="text" placeholder="Search for charities.." />
                 </ul>
             </div>
         </>
     )
 }
+
 
 export default Navbar
