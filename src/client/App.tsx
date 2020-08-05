@@ -11,7 +11,7 @@ const App: React.FC<IAppProps> = () => {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/details/:id" component={Details} />
+        <Route exact path="/charities/:id" component={Details} />
         <Route exact path="/charities/" component={Charities} />
         <Route exact path="/about/" component={About} />
       </Switch>
