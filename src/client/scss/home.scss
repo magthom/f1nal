@@ -118,7 +118,7 @@ padding-right: 50px;
 font-family: open sans; 
 }
 
-.top 		{ background-color:black; width:100%; height: 68px;padding-bottom: 20px; overflow:hidden; display: block; margin: 0px;}
+.top 		{ background-color:black; width:100%; height: 68px;padding-bottom: 20px; overflow:hidden; display: block; margin: 0px; }
 
 .homeParagraph1 {
 	font-size: 20px;
@@ -156,7 +156,7 @@ display: inline;
 
 
 
-.topnav {  background-color:#333333; clear:both; width:100%; font-family: open sans; position: fixed; }
+.topnav {  background-color:#333333; clear:both; width:100%; font-family: open sans; position: absolute; }
 .topnav ul { width:100%; float:left; margin:0px; background-color:#333333;	
 	border-bottom: 3px #cccccc solid; padding-top: 0px; font-family: open sans; }
 .topnav input[type=text] {
@@ -415,6 +415,7 @@ height: 50px;
 color: #FFFFFF;
 text-align: center;
 font-size: medium;
+height: 50px;
 
 }
 
@@ -427,11 +428,37 @@ font-size: medium;
 	
 }
 
-.cardContainer:hover {
+.cardContainer1:hover {
 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.cardContainer {
+.cardContainer2:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	}
+
+	.cardContainer3:hover {
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+		}
+
+.cardContainer1 {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	font-family: open sans; 
+	width: 370px;
+	height: 400px;
+	
+}
+
+.cardContainer2 {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	font-family: open sans; 
+	width: 370px;
+	height: 400px;
+	
+}
+
+.cardContainer3 {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
 	font-family: open sans; 

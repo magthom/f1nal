@@ -33,7 +33,7 @@ There is always something you can do to help others.  And by helping others you 
                 <div className="cards">
                   <div className="cardOne">
                     
-                    <div className="cardContainer">
+                    <div className="cardContainer1">
                     <img src="./assests/Bhamstrong.jpg" alt="" width="370px" height="150px" />
                       <h2>Birmingham Strong Emergency Loan Fund</h2>
                       <p className="bhamStrongPara">An emergency loan fund to provide zero-interest, 180-day loans to small businesses (less than 50 employees) of no more than $25,000 (with an average loan size of $10,000) to (a) prevent staff reductions; (b) offset losses related to the Coronavirus; and (c) help companies sponsor sick pay for workers.</p>
@@ -44,7 +44,7 @@ There is always something you can do to help others.  And by helping others you 
                   </div>
                   <div className="cardTwo">
   
-                     <div className="cardContainer">
+                     <div className="cardContainer2">
                      <img src="./assests/jcdh.png" alt="" width="370px" height="150px" />
                       <h2>Jefferson County Department of Health</h2>
                       <p className="jcdhPara">The JCDH is collecting these PPE (personal protection equipment) items:
@@ -58,7 +58,7 @@ There is always something you can do to help others.  And by helping others you 
                   </div>
                   <div className="cardThree">
                    
-                    <div className="cardContainer">
+                    <div className="cardContainer3">
                     <img src="./assests/UAB.jpg" alt="" width="370px" height="150px" />
                       <h2>UAB</h2>
                       <p>As cases of COVID-19 in Alabama increase, the state’s largest hospital, UAB, needs your help. There is an urgent need for more PPE (personal protection equipment). This includes:
