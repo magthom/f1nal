@@ -1,7 +1,6 @@
 import * as express from "express";
 import * as path from "path";
 import * as morgan from "morgan";
-import * as helmet from "helmet";
 import * as cors from 'cors';
 import * as compression from "compression";
 import * as passport from "passport";
@@ -10,7 +9,7 @@ import routes from "./routes";
 const app = express();
 
 //compress req/res objects
-app.use(helmet());
+
 app.use(cors());
 app.use(compression());
 app.use(morgan('dev'));

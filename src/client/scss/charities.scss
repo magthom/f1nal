@@ -89,7 +89,7 @@ ol li { color:#000; font-size:12px; }
 
 .charityBorder {
 	border-left: 300px solid #CCCCCC;
-	border-right: 300px solid #CCCCCC; 
+	border-right: 100% solid #CCCCCC; 
 	height: 2000px;
 }
 
@@ -101,7 +101,7 @@ ol li { color:#000; font-size:12px; }
 
 .charityContent {
 width: 1300px;
-height: 1500px;
+height: 100%;
 text-align: center;
 margin-left: 0px;
 background-color: #FFFFFF;
@@ -192,7 +192,7 @@ margin-left: 40px;
 
 
 
-.charityNavLeft { float:left; width: 21.9%; padding:0px; padding-top: 0px; padding-right: 40px; padding-bottom: 118px; padding-left: 0px; background-color: #808080; margin-bottom: 100px;}
+.charityNavLeft { float:left; height:100%; width: 21.9%; padding:0px; padding-top: 0px; padding-right: 40px; padding-bottom: 118px; padding-left: 0px; background-color: #808080; margin-bottom: 100px;}
 .charityNavLeft p { width: 135px; height: 70px; margin: auto; font-size: 13px; line-height: 1.6em; color:#FFFFFF; text-align: center;}
 .charityNavLeft a:link {color:#ffffff;}
 .charityNavLeft a:visited {color:#ffffff;}
@@ -209,7 +209,7 @@ margin-left: 40px;
 
 /* Charities Details */
 
-.wrapper2 { width: 100%; margin:0px auto; background-color: #999999; height: 900px;}
+.wrapper2 { width: 100%; margin:0px auto; background-color: #999999; height: 100%;}
 
 .charityName {
 text-indent: 250px;

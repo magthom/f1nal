@@ -4,13 +4,13 @@ import { useHistory, useParams } from "react-router-dom";
 
 const OrgCard: React.FC<OrgCardProps> = (props) => {
 
-  const history = useHistory();
-  console.log(props);
+  const history = useHistory()
 
   return (
       <div className="col-md-6 mx-1">
-        <div onClick={() => history.push(`/charities/${props.charity.id}`)} 
-        className="card my-2 shadow">
+        <div
+          onClick={() => history.push(`/details/${props.charity.id}`)}
+          className="card my-2 shadow">
           <div className="card-body text-center">
             <h4 className="card-title">{props.charity.charity_name}</h4>
             <p className="card-text">{props.charity.category_name}</p>
@@ -21,7 +21,7 @@ const OrgCard: React.FC<OrgCardProps> = (props) => {
 };
 
 interface OrgCardProps {
- charity: ICharity;
+  charity: ICharity
 }
 
-export default OrgCard;
+export default OrgCard
