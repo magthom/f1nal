@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
+import '../scss/home.scss';
 
 class Home extends React.Component<HomeProps> {
   constructor(props) {
@@ -20,14 +21,14 @@ class Home extends React.Component<HomeProps> {
               <video autoPlay muted loop className="auto-style4" style={{ width: '100%' }}>
                 <source src="./assests/videos/sitevideo.mp4" />
               </video><div className="subbanner">
-                <h2>Support charities in Birmingham, Alabama</h2>
+                <h1>Support charities in Birmingham, Alabama</h1>
                
-                <p className="homeparagraph1">There is so many ways you can get involved with charities in the Birmingham area. You should start by looking into what type of charity you would like to support. Once you have decided what you would like to focus on then you will need to decide how you would like to support them. There is no one way to help a local charity; you can donate money, time, or supplies to the charity of your choosing. The last step is to get in touch with the charity you wish to support and figure out what they need and make a plan with them.. </p>
+                <p className="homeParagraph1">There are so many ways you can get involved with charities in the Birmingham area. You should start by looking into what type of charity you would like to support.  Once you have decided what you would like to focus on then you will need to decide how you would like to support them. There is no one way to help a local charity; you can donate money, time, or supplies to the charity of your choosing. The last step is to get in touch with the charity you wish to support and figure out what they need and make a plan with them. </p>
                 
-                <h2>How to help during the Covid 19 pandemic</h2>
+                <h1>Covid-19: How to help</h1>
                
-                <p className="homeparagraph2">As we watch the coronavirus pandemic play out on a global scale, it’s easy to feel helpless. But no matter who you are or what your situation, you can make a difference. Even if you’re quarantined at home, there are still many ways to get involved and give back, including donating money or supplies, volunteering virtually, and checking in on people who might need support.
-There is always something you can do to help others. And by helping others you will also help yourself. Research shows that volunteering makes you happier and healthier. Especially now with most of us isolated from others or confined to interacting with only those in our household it’s a great way to reinforce your community ties and remind you that we’re all working towards a common goal. Finding ways to give back during COVID-19 will help lower your own anxiety and stress, boost your mood, and give you a sense of purpose during this difficult time. </p>
+                <p className="homeParagraph2">As we watch the Coronavirus Pandemic play out on a global scale, it’s easy to feel helpless. But no matter who you are or what your situation, you can make a difference. Even if you’re quarantined at home, there are still many ways to get involved and give back, including donating money or supplies, volunteering virtually, and checking in on people who might need support.
+There is always something you can do to help others.  And by helping others you will also help yourself.  Research shows that volunteering makes you happier and healthier. Especially now with most of us isolated from others or confined to interacting with only those in our household it’s a great way to reinforce your community ties and remind you that we’re all working towards a common goal.  Finding ways to give back during COVID-19 will help lower your own anxiety and stress, boost your mood, and give you a sense of purpose during this difficult time. </p>
                 {/* Cards */}
                 <div className="cards">
                   <div className="cardOne">

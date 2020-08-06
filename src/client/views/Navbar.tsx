@@ -1,9 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import '../scss/home.scss';
 
 const Navbar: React.FC<{}> = () => {
     return (
         <>
+       
             <div className="top">
                 <div className="logo">
                     <img src="./assests/darklogo.jpg" alt="Helping Hands Logo" width={300} className="auto-style5" height={70} />
@@ -24,12 +26,13 @@ const Navbar: React.FC<{}> = () => {
             </div>
             <div className="topnav">
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="Charities">Charities</Link></li>
-                    <li><Link to="/About">About</Link></li>
+                    <li className="homeName"><Link to="/Home">Home</Link></li>
+                    <li><Link to="/charities">Charities</Link></li>
+                    <li><Link to="/about">About</Link></li>
                     <input className="search" type="text" placeholder="Search for charities.." />
                 </ul>
             </div>
+           
         </>
     )
 }
