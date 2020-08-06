@@ -1,7 +1,8 @@
 import * as React from "react";
 import { ICharity } from "../UTILS/types";
 import { match } from "react-router";
-import { networkInterfaces } from "os";
+import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 class Details extends React.Component<DetailsProps, { org: any }> {
   id: any;
@@ -9,6 +10,7 @@ class Details extends React.Component<DetailsProps, { org: any }> {
     super(props);
     this.state = { org: {} };
   }
+
   newMission() {
     let newNewArr = [];
     let arr = this.state.org.mission.split(/[ ,.]+/);
@@ -17,37 +19,65 @@ class Details extends React.Component<DetailsProps, { org: any }> {
     let mission = newNewArr.toString();
     console.log(mission.replace(',', ' '));
   }
-
   async componentDidMount() {
     try {
-      let res = await fetch(`/api/charities/${this.props.match.params.id}`);
-      let org = await res.json();
+      let r = await fetch(`/api/charities/${this.props.match.params.id}`);
+      let org = await r.json();
       this.setState({ org: org });
-      this.newMission();
+      this.newMission()
     } catch (error) {
       console.log(error);
     }
   }
-
   render() {
     return (
-      <main className="container">
-        <h1 className="text-primary text-center"></h1>
-        <ul className="list-group">
-          <h2>{this.state.org.charity_name}</h2>
-          <p>
-            {this.state.org.city}
-            {" AL, "}
-            {this.state.org.streetAddress1}
-            {", "}
-            {this.state.org.postal_code}
-          </p>
-          <h4>{this.state.org.tagline}</h4>
-          <h4>{this.state.org.mission}</h4>
-          <p>Category: {this.state.org.category_name}</p>
-          <p>Cause: {this.state.org.cause_name}</p>
-        </ul>
-      </main>
+      <div>
+        <Navbar />
+        <div className="banner">
+        </div>
+        <div id="wrapper">
+          <div id="content">
+            <div className="main">
+              <h1 id="charity_name">{this.state.org.charity_name}</h1>
+              <div className="mission">
+                <button>Donate to this charity</button>
+                <h3>Mission</h3>
+                <p>{this.state.org.mission}</p>
+              </div>
+            </div>
+            <div id="contact">
+              <h3>Charity Contact Info</h3>
+              <form
+                id="address"
+              >
+                Address:
+              </form>
+              <form
+                id="phone"
+              >
+                Phone:
+              </form>
+              <form
+                id="fax"
+              >
+                Fax:
+              </form>
+              <form
+                id="ein">
+                EIN:
+              </form>
+              <form
+                id="website">
+                Website:
+              </form>
+              <div id="rating">
+                <h3>Rating</h3>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     );
   }
 }
@@ -55,5 +85,4 @@ class Details extends React.Component<DetailsProps, { org: any }> {
 interface DetailsProps {
   org?: ICharity;
 }
-
 export default Details;
