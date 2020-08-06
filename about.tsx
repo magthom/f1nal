@@ -19,7 +19,7 @@ class Home extends React.Component<HomeProps> {
           <div className="aboutWrapper">
             <div className="aboutBorder">
               <div className="aboutContent">
-                <img src="./assests/City_chaston.jpg" alt="City" width={1300} height={400} />
+                <img src="./assets/City_chaston.jpg" alt="City" width={1300} height={400} />
                 <div className="subbanner">
                   <div className="mainSection">
 
