@@ -19,7 +19,7 @@ class Home extends React.Component<HomeProps> {
             <div className="outsideBorder">
             <div className="content">
               <video autoPlay muted loop className="auto-style4" style={{ width: '100%' }}>
-                <source src="./assests/videos/sitevideo.mp4" />
+                <source src="./assets/videos/sitevideo.mp4" />
               </video><div className="subbanner">
                 <h1>Support charities in Birmingham, Alabama</h1>
                
@@ -34,7 +34,7 @@ There is always something you can do to help others.  And by helping others you 
                   <div className="cardOne">
                     
                     <div className="cardContainer">
-                    <img src="./assests/Bhamstrong.jpg" alt="" width="370px" height="150px" />
+                    <img src="./assets/Bhamstrong.jpg" alt="" width="370px" height="150px" />
                       <h2>Birmingham Strong Emergency Loan Fund</h2>
                       <p className="bhamStrongPara">An emergency loan fund to provide zero-interest, 180-day loans to small businesses (less than 50 employees) of no more than $25,000 (with an average loan size of $10,000) to (a) prevent staff reductions; (b) offset losses related to the Coronavirus; and (c) help companies sponsor sick pay for workers.</p>
                       <div className="learnMore">
@@ -45,7 +45,7 @@ There is always something you can do to help others.  And by helping others you 
                   <div className="cardTwo">
   
                      <div className="cardContainer">
-                     <img src="./assests/jcdh.png" alt="" width="370px" height="150px" />
+                     <img src="./assets/jcdh.png" alt="" width="370px" height="150px" />
                       <h2>Jefferson County Department of Health</h2>
                       <p className="jcdhPara">The JCDH is collecting these PPE (personal protection equipment) items:
                       N95 masks, surgical masks, isolation gowns, gloves, face shields, sterile
@@ -59,7 +59,7 @@ There is always something you can do to help others.  And by helping others you 
                   <div className="cardThree">
                    
                     <div className="cardContainer">
-                    <img src="./assests/UAB.jpg" alt="" width="370px" height="150px" />
+                    <img src="./assets/UAB.jpg" alt="" width="370px" height="150px" />
                       <h2>UAB</h2>
                       <p>As cases of COVID-19 in Alabama increase, the state’s largest hospital, UAB, needs your help. There is an urgent need for more PPE (personal protection equipment). This includes:
                       Face masks (including n95 respirator masks)
