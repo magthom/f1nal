@@ -26,7 +26,7 @@ const Navbar: React.FC<{}> = () => {
             </div>
             <div className="topnav">
                 <ul>
-                    <li className="homeName"><Link to="/Home">Home</Link></li>
+                    <li className="homeName"><Link to="/">Home</Link></li>
                     <li><Link to="/charities">Charities</Link></li>
                     <li><Link to="/about">About</Link></li>
                     <input className="search" type="text" placeholder="Search for charities.." />

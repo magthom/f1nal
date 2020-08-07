@@ -21,9 +21,9 @@ class Home extends React.Component<HomeProps> {
               <video autoPlay muted loop className="auto-style4" style={{ width: '100%' }}>
                 <source src="./assests/videos/sitevideo.mp4" />
               </video><div className="subbanner">
-                <h1>Support charities in Birmingham, Alabama</h1>
+                <h1>Support charities in Alabama</h1>
                
-                <p className="homeParagraph1">There are so many ways you can get involved with charities in the Birmingham area. You should start by looking into what type of charity you would like to support.  Once you have decided what you would like to focus on then you will need to decide how you would like to support them. There is no one way to help a local charity; you can donate money, time, or supplies to the charity of your choosing. The last step is to get in touch with the charity you wish to support and figure out what they need and make a plan with them. </p>
+                <p className="homeParagraph1">There are so many ways you can get involved with charities in Alabama. You should start by looking into what type of charity you would like to support.  Once you have decided what you would like to focus on then you will need to decide how you would like to support them. There is no one way to help a local charity; you can donate money, time, or supplies to the charity of your choosing. The last step is to get in touch with the charity you wish to support and figure out what they need and make a plan with them. </p>
                 
                 <h1>Covid-19: How to help</h1>
                
@@ -38,7 +38,7 @@ There is always something you can do to help others.  And by helping others you 
                       <h2>Birmingham Strong Emergency Loan Fund</h2>
                       <p className="bhamStrongPara">An emergency loan fund to provide zero-interest, 180-day loans to small businesses (less than 50 employees) of no more than $25,000 (with an average loan size of $10,000) to (a) prevent staff reductions; (b) offset losses related to the Coronavirus; and (c) help companies sponsor sick pay for workers.</p>
                       <div className="learnMore">
-                        <p>Learn more</p>
+                        <p> <a href="https://bhamstrong.com/">Learn more</a> </p>
                       </div>
                     </div>
                   </div>
