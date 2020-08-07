@@ -19,11 +19,11 @@ class Home extends React.Component<HomeProps> {
             <div className="outsideBorder">
             <div className="content">
               <video autoPlay muted loop className="auto-style4" style={{ width: '100%' }}>
-                <source src="./assets/videos/sitevideo.mp4" />
+                <source src="./assests/videos/sitevideo.mp4" />
               </video><div className="subbanner">
-                <h1>Support charities in Birmingham, Alabama</h1>
+                <h1>Support charities in Alabama</h1>
                
-                <p className="homeParagraph1">There are so many ways you can get involved with charities in the Birmingham area. You should start by looking into what type of charity you would like to support.  Once you have decided what you would like to focus on then you will need to decide how you would like to support them. There is no one way to help a local charity; you can donate money, time, or supplies to the charity of your choosing. The last step is to get in touch with the charity you wish to support and figure out what they need and make a plan with them. </p>
+                <p className="homeParagraph1">There are so many ways you can get involved with charities in Alabama. You should start by looking into what type of charity you would like to support.  Once you have decided what you would like to focus on then you will need to decide how you would like to support them. There is no one way to help a local charity; you can donate money, time, or supplies to the charity of your choosing. The last step is to get in touch with the charity you wish to support and figure out what they need and make a plan with them. </p>
                 
                 <h1>Covid-19: How to help</h1>
                
@@ -33,19 +33,19 @@ There is always something you can do to help others.  And by helping others you 
                 <div className="cards">
                   <div className="cardOne">
                     
-                    <div className="cardContainer">
-                    <img src="./assets/Bhamstrong.jpg" alt="" width="370px" height="150px" />
+                    <div className="cardContainer1">
+                    <img src="./assests/Bhamstrong.jpg" alt="" width="370px" height="150px" />
                       <h2>Birmingham Strong Emergency Loan Fund</h2>
                       <p className="bhamStrongPara">An emergency loan fund to provide zero-interest, 180-day loans to small businesses (less than 50 employees) of no more than $25,000 (with an average loan size of $10,000) to (a) prevent staff reductions; (b) offset losses related to the Coronavirus; and (c) help companies sponsor sick pay for workers.</p>
                       <div className="learnMore">
-                        <p>Learn more</p>
+                        <p> <a href="https://bhamstrong.com/">Learn more</a> </p>
                       </div>
                     </div>
                   </div>
                   <div className="cardTwo">
   
-                     <div className="cardContainer">
-                     <img src="./assets/jcdh.png" alt="" width="370px" height="150px" />
+                     <div className="cardContainer2">
+                     <img src="./assests/jcdh.png" alt="" width="370px" height="150px" />
                       <h2>Jefferson County Department of Health</h2>
                       <p className="jcdhPara">The JCDH is collecting these PPE (personal protection equipment) items:
                       N95 masks, surgical masks, isolation gowns, gloves, face shields, sterile
@@ -58,8 +58,8 @@ There is always something you can do to help others.  And by helping others you 
                   </div>
                   <div className="cardThree">
                    
-                    <div className="cardContainer">
-                    <img src="./assets/UAB.jpg" alt="" width="370px" height="150px" />
+                    <div className="cardContainer3">
+                    <img src="./assests/UAB.jpg" alt="" width="370px" height="150px" />
                       <h2>UAB</h2>
                       <p>As cases of COVID-19 in Alabama increase, the state’s largest hospital, UAB, needs your help. There is an urgent need for more PPE (personal protection equipment). This includes:
                       Face masks (including n95 respirator masks)
