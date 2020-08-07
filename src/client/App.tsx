@@ -13,7 +13,7 @@ const App: React.FC<IAppProps> = () => {
         <Route exact path="/" component={Home} />
         <Route exact path="/details/:id" component={Details} />
         <Route exact path="/charities/" component={Charities} />
-        { <Route exact path="/about/" component={About} /> }
+        <Route exact path="/about/" component={About} /> 
       </Switch>
     </BrowserRouter>
   );
