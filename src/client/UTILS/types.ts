@@ -1,4 +1,4 @@
-export interface CharitiesAPI {
+export interface TCharitiesAPI {
     charityName: String,
     categoryName: Number,
     categoryID: Number,
@@ -6,6 +6,7 @@ export interface CharitiesAPI {
     causeID: Number,
     city: String,
     streetAddress1: String,
+    websiteURL: String,
     postalCode: String,
     mission: String,
     tagline: String,
@@ -22,6 +23,7 @@ export interface ICharity {
     cause_id: number,
     city: string,
     streetAddress1: string,
+    websiteURL: string,
     postal_code: string,
     mission: string,
     tagline: string,
