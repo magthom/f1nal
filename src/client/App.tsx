@@ -4,7 +4,7 @@ import Home from "./views/Home";
 import Details from "./views/Details";
 import Charities from "./views/Charities";
 import About from "./views/About"
-import { ICharity, CharitiesAPI } from "./UTILS/types";
+import { ICharity, TCharitiesAPI } from "./UTILS/types";
 
 const App: React.FC<IAppProps> = () => {
   return (
