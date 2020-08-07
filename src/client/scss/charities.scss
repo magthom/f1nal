@@ -1,5 +1,4 @@
 /* Reset */
-
 html, body {margin: 0; padding: 0; border: 0; 
 	background: transparent; font-size: 10px;}
 
@@ -19,7 +18,7 @@ display:block;
 }
 
 h1, h2, h3, h4, h5, h6, p, li, a {
-font-family: open sans, Arial, Helvetica, sans-serif;
+font-family: Arial, Helvetica, sans-serif;
 font-size: 100%;
 font-weight: normal;
 font-style: normal;
@@ -88,45 +87,42 @@ ol li { color:#000; font-size:12px; }
 }
 
 
-.outsideBorder {
+.charityBorder {
 	border-left: 300px solid #4DB7B3;
-	border-right: 310px solid #4DB7B3; 
+	border-right: 350px solid #4DB7B3; 
 	height: 2000px;
+	height: fit-content;
 }
 
-.content {
+.containerRed {
+	background-color: white;
+	width: 100%;
+	height: 100%;
+}
+
+.charityContent {
 width: 1300px;
-height: 1500px;
+height: fit-content;
 text-align: center;
 margin-left: 0px;
 background-color: #FFFFFF;
-font-family: open sans; 
+display: flex; 
+flex-direction: row;
 
 }
 
-.content h1 {
+.content h2 {
 text-align: center;
 padding-top: 20px;
-font-weight: bold;
-font-family: open sans; 
 }
 
 .content p {
 padding-top: 5px;
 padding-left: 50px;
 padding-right: 50px;
-font-family: open sans; 
 }
 
 .top 		{ background-color:black; width:100%; height: 68px;padding-bottom: 20px; overflow:hidden; display: block; margin: 0px; }
-
-.homeParagraph1 {
-	font-size: 20px;
-}
-
-.homeParagraph2 {
-	font-size: 20px;
-}
 
 /* FB and Twitter Icons */
 .favIcons {
@@ -148,7 +144,7 @@ padding-left: 5px;
 /* Login, register, donate */
 
 .social-media { float:right; margin:0 10px 0 0; padding-top: 20px;}
-.social-media p { color:#ffffff; font-size:18px; margin:4px 10px 4px 0px; display:inline; margin:0 10px 0 0; font-family: open sans;}
+.social-media p { color:#ffffff; font-size:18px; margin:4px 10px 4px 0px; display:inline; margin:0 10px 0 0;}
 .social-media img { width:24px; height:24px; }
 .social-media ul li {
 display: inline;
@@ -156,9 +152,9 @@ display: inline;
 
 
 
-.topnav {  background-color:#333333; clear:both; width:100%; font-family: open sans; position: absolute; }
+.topnav {  background-color:#333333; clear:both; width:100%;}
 .topnav ul { width:100%; float:left; margin:0px; background-color:#333333;	
-	border-bottom: 3px #cccccc solid; padding-top: 0px; font-family: open sans; }
+	border-bottom: 3px #cccccc solid; padding-top: 10px;}
 .topnav input[type=text] {
 float: right;
 padding: 6px;
@@ -167,11 +163,9 @@ margin-top: 8px;
 margin-right: 16px;
 font-size: 17px;
 background-color:#CCCCCC;
-font-family: open sans; 
 }
 
-
-.topnav ul li { display:inline; font-size: 18px; padding-top: 40px; font-family: open sans; }
+.topnav ul li { display:inline; font-size: 18px;}
 .topnav ul li a {float:left; padding:10px 20px;}
 
 .topnav a:link {color:#ffffff;}
@@ -181,46 +175,40 @@ font-family: open sans;
 .topnav a:focus {color:#ffffff;}
 
 .directory {
-background-color:#333333;
-}
-
-.topnav link {
-	font-family: open sans;
-}
-
-
-.navLeft { float:left; width: 21.9%; padding:0px; padding-top: 0px; padding-right: 40px; padding-bottom: 118px; padding-left: 0px; background-color: #808080; margin-bottom: 100px;}
-.navLeft p { width: 975px; margin: auto; font-size: 13px; line-height: 1.6em; color:#FFFFFF;}
-.navLeft a:link {color:#ffffff;}
-.navLeft a:visited {color:#ffffff;}
-.navLeft a:active {color:#ffffff;}
-/* .navLeft a:hover {color:#ffffff; background-color: #4DB7B3} */
-.navLeft a:focus {color:#ffffff;}
-.navLeft p:hover {
-color:#ffffff; background-color: #4DB7B3
-}
-
-
-video {
-object-fit: fill;
-width: 100%;
-height: 400px;
-}
-
-/* About Page */
-
-.aboutHeader {
+width: 200px;
+height: 50px;
+font-size: 18px;
 text-align: center;
-margin-top: 30px;
+color: white;
+padding-top: 20px;
+margin-left: 40px;
+
 }
 
-.about {
-font-size: large;
-margin-right: 30px;
-margin-left: 30px;
-text-indent: 30px;
-outline: 1px solid #666666;
+.directoryBackground {
+    background-color:#333333;
+    width: 285px;
+    height: 60px;
 }
+
+
+
+.charityNavLeft { float:left; width: 21.9%; padding:0px; padding-top: 0px; padding-right: 40px; padding-bottom: 118px; padding-left: 0px; background-color: #808080; margin-bottom: 100px; margin-top: 65px;}
+.charityNavLeft p { width: 135px; height: 70px; margin: auto; font-size: 13px; line-height: 1.6em; color:#FFFFFF; text-align: center;}
+.charityNavLeft a:link {color:#ffffff;}
+.charityNavLeft a:visited {color:#ffffff;}
+.charityNavLefta:active {color:#ffffff;}
+/* .navLeft a:hover {color:#ffffff; background-color: #4DB7B3} */
+.charityNavLeft a:focus {color:#ffffff;}
+.charityNavLeft p:hover {
+    color: #4DB7B3
+}
+
+.list-group {
+	margin-top: 50px;
+	width: 2200px;
+}
+
 
 
 
@@ -359,160 +347,3 @@ font-size: 12px;
 }
 
 br { clear: left; }
-
-
-/* Cards */
-
-.cards {
-display: inline;
-
-}
-
-.cardContainer h2 {
-	font-family: open sans; 
-}
-
-.learnMore p {
-background-color:#333333;
-margin-top: 40px;
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-justify-content: center;
-align-items: center;
-display: flex;
-font-family: open sans;
-
-
-}
-
-.learnMore a:visited {
-	
-	color: white;
-	font-family: open sans;
-
-}
-
-.learnMore2
-{
-background-color:#333333;
-margin-top: 75px;
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-
-
-}
-
-.learnMore3
-{
-background-color:#333333;
-margin-top: 59px;
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-margin-top: 70px;
-
-
-}
-
-
-.learnMore p {
-color: #FFFFFF;
-text-align: center;
-font-size: medium;
-height: 50px;
-}
-.learnMore2 p {
-color: #FFFFFF;
-text-align: center;
-font-size: medium;
-height: 50px;
-}
-.learnMore3 p {
-color: #FFFFFF;
-text-align: center;
-font-size: medium;
-height: 50px;
-
-
-}
-
-
-.cardOne {  
-	float: left;
-	margin-top: 20px;
-	margin-right: 0;
-	margin-left: 30px;
-	
-}
-
-.cardContainer1:hover {
-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.cardContainer2:hover {
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-	}
-
-	.cardContainer3:hover {
-		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-		}
-
-.cardContainer1 {
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	transition: 0.3s;
-	font-family: open sans; 
-	width: 370px;
-	height: 400px;
-	margin-top: 40px;
-	
-}
-
-.cardContainer2 {
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	transition: 0.3s;
-	font-family: open sans; 
-	width: 370px;
-	height: 400px;
-	margin-top: 40px;
-	
-	
-}
-
-.cardContainer3 {
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	transition: 0.3s;
-	font-family: open sans; 
-	width: 370px;
-	height: 410px;
-	margin-top: 40px;
-	
-}
-
-.cardTwo {
-
-	float: left;
-	margin-top: 20px;
-	margin-right: 0;
-	margin-left: 70px;
-
-}
-
-/* .cardTwo:hover {
-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-} */
-
-.cardThree {
-	float: right;
-	margin-top: 20px;
-	margin-right: 30px;
-	margin-left: 0px;
-
-}
-
-.bhamStrongPara {
-	margin-top: 30px;
-	width: 400px;
-	height: 100px;
-}
-
-.jcdhPara {
-	margin-top: 30px;
-	width: 400px;
-	height: 90px;
-}
