@@ -13,7 +13,7 @@ class Home extends React.Component<HomeProps> {
         <div>
           <title>Document</title>
           {/* <style type="text/css" dangerouslySetInnerHTML={{ __html: "\n.auto-style2 {\n\tfont-size: large;\n}\n\t.auto-style4 {\n\t\tmargin-right: 0px;\n\t\tmargin-top: 0px;\n\t\tmargin-left: 0px;\n\t}\n\t.auto-style5 {\n\t\tmargin-top: 0;\n\t}\n\t.auto-style6 {\n\t\tmargin-bottom: 64px;\n\t}\n\t" }} /> */}
-          <Navbar />
+          
           <div className="banner">
             &nbsp;</div>
             <div className="outsideBorder">
