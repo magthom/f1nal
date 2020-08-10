@@ -33,46 +33,49 @@ class Details extends React.Component<DetailsProps, { org: any }> {
   render() {
     return (
 
-      <div className="detailsContainer">
-        <Navbar />
-        <div className="banner">
-        </div>
-        <div className="wrapper">
-          <div className="content">
-            <div className="main">
+      <>
+      <div>
+        
+        <div className="detailsContainer">
+          
+          <div className="detailsBorder">
+            <div className="banner">
+            </div>
+
+
+
+            <div className="missionContainer">
               <h1 className="charity_name">{this.state.org.charity_name}</h1>
-              <div className="mission">
-                <button className="btn btn-outline-primary"><a href={this.state.org.websiteURL} styles="text-decoration: none; background-color: ;"> More information / Donate</a></button>
-                <h3>Mission</h3>
-                <br />
-                <h2> {this.state.org.tagline} </h2>
-                <p className="missionStatement shadow">{this.state.org.mission}</p>
+              <h2 className="tagline"> {this.state.org.tagline} </h2>
+              <div className="missionBox">
+                <p className="missionStatement">{this.state.org.mission}</p>
               </div>
-            </div>
-            <div className="contact">
-              <h3>Charity Contact Info</h3>
-              <form
-                className="Address"
-              >
-                Address: {this.state.org.city} {" AL, "} {this.state.org.streetAddress1} {", "} {this.state.org.postal_code}
+              <div className="missionBackground"></div>
+              <div className="donateBackground"> <button className="btn"><a href={this.state.org.websiteURL}> Donate</a></button></div>
+              <div className="addressBackground"></div>
+              <div className="einBackground"></div>
+              <div className="websiteBackground"></div>
+              <div className="ratingBackground"></div>
+              <div className="contactBackground"></div>
+              <span className="contactInformation">Contact Information</span>
+              <span className="mission">Mission</span>
+
+              <div className="contactBox"></div>
+              <form className="address">Address: {this.state.org.city} {" AL, "} {this.state.org.streetAddress1} {", "} {this.state.org.postal_code}
+
               </form>
+              <form className="ein">EIN: {this.state.org.EIN}</form>
+              <form className="website">Website: {this.state.org.websiteURL}</form>
+              <form className="rating">Rating: {this.state.org.rating}</form>
+            </div>
 
 
-              <form
-                className="ein">
-                EIN: {this.state.org.EIN}
-              </form>
-              <form
-                className="website">
-                Website: {this.state.org.websiteURL}
-              </form>
-              {/* <form className="rating">
-                  Rating: {this.state.org.rating}
-              </form> */}
-            </div>
+
+
           </div>
         </div>
-      </div>
+        </div>
+      </>
     );
   }
 }
@@ -81,3 +84,30 @@ interface DetailsProps {
   org?: ICharity;
 }
 export default Details;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
