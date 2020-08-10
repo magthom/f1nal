@@ -4,11 +4,13 @@ import Home from "./views/Home";
 import Details from "./views/Details";
 import Charities from "./views/Charities";
 import About from "./views/About"
+import Navbar from "./views/Navbar"
 import { ICharity, CharitiesAPI } from "./UTILS/types";
 
 const App: React.FC<IAppProps> = () => {
   return (
     <BrowserRouter>
+    <div><Navbar /></div>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/details/:id" component={Details} />
