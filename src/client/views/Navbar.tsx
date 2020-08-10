@@ -8,7 +8,7 @@ const Navbar: React.FC<{}> = () => {
        
             <div className="top">
                 <div className="logo">
-                    <img src="./assests/darklogo.jpg" alt="Helping Hands Logo" width={300} className="auto-style5" height={70} />
+                    <img src="./assests/redlogo2.jpg" alt="Helping Hands Logo" width={300} className="auto-style5" height={70} />
                 </div>
                 <div className="social-media">
                     <p>Login</p>
@@ -17,10 +17,16 @@ const Navbar: React.FC<{}> = () => {
                 </div>
                 <div className="favIcons" style={{ width: '69px' }}>
                     <div className="fbIcon">
-                        <img src="./assests/Icons/124010.png" height={24} width={24} />
+                        <img src="./assests/Icons/fbicon.png" height={24} width={24} />
                     </div>
                     <div className="twitterIcon">
-                        <img src="./assests/twitter.png" height={24} width={24} />
+                        <img src="./assests/Icons/twittericon.png" height={24} width={24} />
+                    </div>
+                    <div className="instaIcon">
+                        <img src="./assests/Icons/instaicon.png" height={24} width={24} />
+                    </div>
+                    <div className="ytIcon">
+                        <img src="./assests/Icons/yticon.png" height={24} width={24} />
                     </div>
                 </div>
             </div>
