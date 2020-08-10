@@ -88,8 +88,8 @@ ol li { color:#000; font-size:12px; }
 
 
 .aboutBorder {
-	border-left: 300px solid #4DB7B3;
-	border-right: 300px solid #4DB7B3;
+	border-left: 300px solid #A7463C;
+	border-right: 300px solid #A7463C;
 	height: 2000px;
 }
 
@@ -103,8 +103,8 @@ background-color: white;
 }
 
 .mainSection {
-    outline: 1px solid gray;
-    background-color: #CCCCCC;
+  
+    
     width: 700px;
     height: 500px;
    margin-top: 50px;
@@ -114,6 +114,7 @@ background-color: white;
 
 .aboutHeader {
     padding-top: 30px;
+    font-family: open sans;
    
 }
 
@@ -124,6 +125,7 @@ background-color: white;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 40px;
+    font-family: open sans;
     
 } 
 
@@ -196,7 +198,7 @@ background-color:#CCCCCC;
 .topnav a:link {color:#ffffff;}
 .topnav a:visited {color:#ffffff;}
 .topnav a:active {color:#ffffff;}
-.topnav a:hover {color:#ffffff; background-color: #4DB7B3}
+.topnav a:hover {color:#A7463C;}
 .topnav a:focus {color:#ffffff;}
 
 .directory {
