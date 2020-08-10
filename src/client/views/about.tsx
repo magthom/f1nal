@@ -12,14 +12,14 @@ class Home extends React.Component<HomeProps> {
       <>
         <div>
           <title>Document</title>
-          <Navbar />
+         
 
 
 
           <div className="aboutWrapper">
             <div className="aboutBorder">
               <div className="aboutContent">
-                <img src="./assets/City_chaston.jpg" alt="City" width={1300} height={400} />
+                <img src="./assests/City_chaston.jpg" alt="City" width={1304} height={400} />
                 <div className="subbanner">
                   <div className="mainSection">
 
