@@ -19,7 +19,7 @@ display:block;
 }
 
 h1, h2, h3, h4, h5, h6, p, li, a {
-font-family: open sans, Arial, Helvetica, sans-serif;
+font-family: Arial, Helvetica, sans-serif;
 font-size: 100%;
 font-weight: normal;
 font-style: normal;
@@ -52,12 +52,13 @@ p { color:#000; font-size:12px; line-height:150%; }
 p .left { margin: 1.5em 1.5em 1.5em 0; padding: 0;}
 p .right { margin: 1.5em 0 1.5em 1.5em; padding: 0;}
 
-
+/*
 a:link { color: #00f; }
 a:visited { color: #00f; }
 a:active { color: #00f; }
 a:focus { color: #00f; }
 a:hover { color: #00f; }
+*/
 
 blockquote { color:#000; font-size:12px; }
 
@@ -74,7 +75,7 @@ ol li { color:#000; font-size:12px; }
 
 /* Search bar */
 .search {
-	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 
@@ -89,9 +90,9 @@ ol li { color:#000; font-size:12px; }
 
 
 .outsideBorder {
-	border-left: 300px solid #4DB7B3;
-	border-right: 310px solid #4DB7B3; 
-	height: 2000px;
+	border-left: 300px solid #A7463C;
+	border-right: 310px solid #A7463C; 
+	height: 1500px;
 }
 
 .content {
@@ -99,8 +100,8 @@ width: 1300px;
 height: 1500px;
 text-align: center;
 margin-left: 0px;
-background-color: #FFFFFF;
-font-family: open sans; 
+background-color: #F5EEEF;
+font-family: arial; 
 
 }
 
@@ -108,17 +109,17 @@ font-family: open sans;
 text-align: center;
 padding-top: 20px;
 font-weight: bold;
-font-family: open sans; 
+font-family: arial; 
 }
 
 .content p {
 padding-top: 5px;
 padding-left: 50px;
 padding-right: 50px;
-font-family: open sans; 
+font-family: arial; 
 }
 
-.top 		{ background-color:black; width:100%; height: 68px;padding-bottom: 20px; overflow:hidden; display: block; margin: 0px; }
+.top 		{ background-color:#F5EEEF; width:100%; height: 68px;padding-bottom: 20px; overflow:hidden; display: block; margin: 0px; }
 
 .homeParagraph1 {
 	font-size: 20px;
@@ -130,7 +131,7 @@ font-family: open sans;
 
 /* FB and Twitter Icons */
 .favIcons {
-margin-right: 0px;
+margin-right: 60px;
 float: right;
 width:24px; height:24px;
 display: flex;
@@ -139,8 +140,13 @@ padding-top: 20px;
 
 .twitterIcon {
 padding-left: 5px;
+padding-right: 5px;
 
 
+}
+
+.instaIcon {
+	padding-right: 5px;
 }
 
 .logo  		{padding-top: 0px; padding-bottom: 30px; margin-bottom: 30px; float:left; }
@@ -148,7 +154,7 @@ padding-left: 5px;
 /* Login, register, donate */
 
 .social-media { float:right; margin:0 10px 0 0; padding-top: 20px;}
-.social-media p { color:#ffffff; font-size:18px; margin:4px 10px 4px 0px; display:inline; margin:0 10px 0 0; font-family: open sans;}
+.social-media p { color:#302932; font-size:18px; margin:4px 10px 4px 0px; display:inline; margin:0 10px 0 0; font-family: arial;}
 .social-media img { width:24px; height:24px; }
 .social-media ul li {
 display: inline;
@@ -156,28 +162,28 @@ display: inline;
 
 
 
-.topnav {  background-color:#333333; clear:both; width:100%; font-family: open sans; position: absolute; }
-.topnav ul { width:100%; float:left; margin:0px; background-color:#333333;	
-	border-bottom: 3px #cccccc solid; padding-top: 0px; font-family: open sans; }
+.topnav {  background-color:#333333; clear:both; width:100%; font-family: arial; position: absolute; }
+.topnav ul { width:100%; float:left; margin:0px; background-color:#898083;	
+	border-bottom: 3px #cccccc solid; padding-top: 0px; font-family: arial; }
 .topnav input[type=text] {
 float: right;
-padding: 6px;
+padding: 0px;
 border: none;
-margin-top: 8px;
+margin-top: 20px;
 margin-right: 16px;
 font-size: 17px;
 background-color:#CCCCCC;
-font-family: open sans; 
+font-family: arial; 
 }
 
 
-.topnav ul li { display:inline; font-size: 18px; padding-top: 40px; font-family: open sans; }
-.topnav ul li a {float:left; padding:10px 20px;}
+.topnav ul li { display:inline; font-size: 18px; padding-top: 40px; font-family: arial; }
+.topnav ul li a {padding:10px 20px; font-family: arial; margin-top: 10px; text-align: center;}
 
 .topnav a:link {color:#ffffff;}
 .topnav a:visited {color:#ffffff;}
 .topnav a:active {color:#ffffff;}
-.topnav a:hover {color:#ffffff; background-color: #4DB7B3}
+.topnav a:hover {color:#A7463C;}
 .topnav a:focus {color:#ffffff;}
 
 .directory {
@@ -185,7 +191,7 @@ background-color:#333333;
 }
 
 .topnav link {
-	font-family: open sans;
+	font-family: arial;
 }
 
 
@@ -309,10 +315,6 @@ text-align: center;
 padding-top: 30px;
 }
 
-.rating {
-background-color: #C0C0C0 ;
-}
-
 .rating h3 {
 padding-top: 20px;
 text-align: center;
@@ -369,17 +371,17 @@ display: inline;
 }
 
 .cardContainer h2 {
-	font-family: open sans; 
+	font-family: arial; 
 }
 
 .learnMore p {
-background-color:#333333;
+background-color:#A7463C;
 margin-top: 40px;
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 justify-content: center;
 align-items: center;
 display: flex;
-font-family: open sans;
+font-family: arial;
 
 
 }
@@ -387,13 +389,13 @@ font-family: open sans;
 .learnMore a:visited {
 	
 	color: white;
-	font-family: open sans;
+	font-family: arial;
 
 }
 
 .learnMore2
 {
-background-color:#333333;
+background-color:#A7463C;
 margin-top: 75px;
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
@@ -402,7 +404,7 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
 .learnMore3
 {
-background-color:#333333;
+background-color:#A7463C;
 margin-top: 59px;
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 margin-top: 70px;
@@ -414,19 +416,19 @@ margin-top: 70px;
 .learnMore p {
 color: #FFFFFF;
 text-align: center;
-font-size: medium;
+font-size: 24px;
 height: 50px;
 }
 .learnMore2 p {
 color: #FFFFFF;
 text-align: center;
-font-size: medium;
+font-size: 24px;
 height: 50px;
 }
 .learnMore3 p {
 color: #FFFFFF;
 text-align: center;
-font-size: medium;
+font-size: 24px;
 height: 50px;
 
 
@@ -456,7 +458,7 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 .cardContainer1 {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
-	font-family: open sans; 
+	font-family: arial; 
 	width: 370px;
 	height: 400px;
 	margin-top: 40px;
@@ -466,7 +468,7 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 .cardContainer2 {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
-	font-family: open sans; 
+	font-family: arial; 
 	width: 370px;
 	height: 400px;
 	margin-top: 40px;
@@ -477,10 +479,10 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 .cardContainer3 {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
-	font-family: open sans; 
+	font-family: arial; 
 	width: 370px;
 	height: 410px;
-	margin-top: 40px;
+	margin-top: 30px;
 	
 }
 
