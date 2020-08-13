@@ -62,6 +62,17 @@
 	left:935px;
 	top:0px;
 }
+
+
+.donateBackground2 { 
+	background-color:#A7463C;
+	opacity:1;
+	width:240px;
+	height:66px;
+	position:absolute;
+	left:577px;
+	top:0px;
+}
 .addressBackground { 
 	background-color:rgba(229.00000154972076, 229.00000154972076, 229.00000154972076, 1);
 	opacity:1;
@@ -157,6 +168,18 @@
 	margin-top: 10px;
 }
 
+.btnInfo {
+	
+		width: 100px;
+		border: none;
+		color: white;
+		border-color: none !important;
+		margin-left: 55px;
+		margin-top: 10px;
+		background-color: transparent;
+	}
+	
+
 .btn a:link {
 	color: white;
 	font-size: 36px;
@@ -193,6 +216,49 @@
 	border: none !important;
 }
 
+
+
+
+
+.btnInfo a:link {
+	color: white;
+	font-size: 24px;
+	border: red !important;
+}
+
+.btnInfo a:visited {
+	color: white;
+	border-color: red !important;
+}
+
+.btnInfo a:hover {
+	text-decoration: none;
+	border-color: red;
+}
+.btnInfo-outline-primary {
+	margin-left: 60px;
+	margin-top: 10px;
+	font-size: 48px;
+	color: none !important; 
+	border-color: none !important;
+}
+
+.btnInfo-outline-primary a:link {
+	border-color: none !important;
+}
+
+.btnInfo-primary {
+	margin-left: 50px;
+	text-decoration: none !important;
+	color: none !important;
+	background-color: none !important;
+	border-color: none !important;
+	border: none !important;
+}
+
+.button.btninfo {
+	background-color: none !important;
+}
 
 .address { 
 	color:rgba(0, 0, 0, 1);
@@ -255,3 +321,4 @@ font-size: 14px;
 	letter-spacing:0;
 	line-height:undefined;
 }
+
