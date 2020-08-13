@@ -31,7 +31,7 @@ class Home extends React.Component<HomeProps> {
 There is always something you can do to help others.  And by helping others you will also help yourself.  Research shows that volunteering makes you happier and healthier. Especially now with most of us isolated from others or confined to interacting with only those in our household it’s a great way to reinforce your community ties and remind you that we’re all working towards a common goal.  Finding ways to give back during COVID-19 will help lower your own anxiety and stress, boost your mood, and give you a sense of purpose during this difficult time. </p>
                 {/* Cards */}
                 <div className="cards">
-                  <div className="cardOne">
+                  <div className="cardOne hvr-grow">
                     
                     <div className="cardContainer1">
                     <img src="./assests/Bhamstrong.jpg" alt="" width="370px" height="150px" />
@@ -42,7 +42,7 @@ There is always something you can do to help others.  And by helping others you 
                       </div>
                     </div>
                   </div>
-                  <div className="cardTwo">
+                  <div className="cardTwo hvr-grow">
   
                      <div className="cardContainer2">
                      <img src="./assests/jcdh.png" alt="" width="370px" height="150px" />
@@ -56,7 +56,7 @@ There is always something you can do to help others.  And by helping others you 
                       </div>
                     </div>
                   </div>
-                  <div className="cardThree">
+                  <div className="cardThree hvr-grow">
                    
                     <div className="cardContainer3">
                     <img src="./assests/UAB.jpg" alt="" width="370px" height="150px" />
