@@ -78,6 +78,19 @@ ol li { color:#000; font-size:12px; }
 	margin-top: 20px;
 }
 
+.searchbtn {
+	float: right;
+	padding: 0px;
+	border: none;
+	margin-top: 20px;
+	margin-right: 16px;
+	font-size: 17px;
+	background-color:#CCCCCC;
+	font-family: arial; 
+	}
+.btn-primary {
+	background-color: #A7463C !important;
+}
 
 /* Containers */
 
@@ -109,7 +122,8 @@ font-family: arial;
 text-align: center;
 padding-top: 20px;
 font-weight: bold;
-font-family: arial; 
+font-family: arial;
+color: #A7463C;
 }
 
 .content p {
@@ -154,7 +168,7 @@ padding-right: 5px;
 /* Login, register, donate */
 
 .social-media { float:right; margin:0 10px 0 0; padding-top: 20px;}
-.social-media p { color:#302932; font-size:18px; margin:4px 10px 4px 0px; display:inline; margin:0 10px 0 0; font-family: arial;}
+.social-media p { color:#A7463C; font-size:18px; margin:4px 10px 4px 0px; display:inline; margin:0 10px 0 0; font-family: arial;}
 .social-media img { width:24px; height:24px; }
 .social-media ul li {
 display: inline;
@@ -186,10 +200,6 @@ font-family: arial;
 .topnav a:hover {color:#A7463C;}
 .topnav a:focus {color:#ffffff;}
 
-.directory {
-background-color:#333333;
-}
-
 .topnav link {
 	font-family: arial;
 }
@@ -208,6 +218,7 @@ color:#ffffff; background-color: #4DB7B3
 
 
 video {
+margin-top: 60px;
 object-fit: fill;
 width: 100%;
 height: 400px;
@@ -462,6 +473,7 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 	width: 370px;
 	height: 400px;
 	margin-top: 40px;
+	background-color: white;
 	
 }
 
@@ -472,7 +484,7 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 	width: 370px;
 	height: 400px;
 	margin-top: 40px;
-	
+	background-color: white;
 	
 }
 
@@ -483,7 +495,7 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 	width: 370px;
 	height: 410px;
 	margin-top: 30px;
-	
+	background-color: white;
 }
 
 .cardTwo {
@@ -518,3 +530,20 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 	width: 400px;
 	height: 90px;
 }
+
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
