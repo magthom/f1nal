@@ -51,7 +51,8 @@ class Details extends React.Component<DetailsProps, { org: any }> {
                 <p className="missionStatement">{this.state.org.mission}</p>
               </div>
               <div className="missionBackground"></div>
-              <div className="donateBackground"> <button className="btn"><a href={this.state.org.websiteURL}> Donate</a></button></div>
+              <div className="donateBackground2"> <button className="btnInfo"><a href={this.state.org.websiteURL}> More Info </a></button></div>
+              <div className="donateBackground"> <button className="btn"><a href={`${this.state.org.websiteURL}/donate`}> Donate</a></button></div>
               <div className="addressBackground"></div>
               <div className="einBackground"></div>
               <div className="websiteBackground"></div>
